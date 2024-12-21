@@ -5,50 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página para María</title>
     <style>
+        /* Fondo animado */
         body {
-            background-image: url('https://www.w3schools.com/w3images/rose.jpg'); /* Fondo de rosas */
-            background-size: cover;
-            background-position: center;
-            font-family: 'Arial', sans-serif;
-            color: white;
-            text-align: center;
-            padding: 50px;
             margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
         }
+
+        .rose {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-image: url('https://www.w3schools.com/w3images/rose.jpg'); /* Imagen de rosa */
+            background-size: cover;
+            animation: moveRose 10s linear infinite;
+        }
+
+        @keyframes moveRose {
+            0% {
+                top: 100%;
+                left: 100%;
+                transform: scale(0.5);
+            }
+            50% {
+                top: 50%;
+                left: 50%;
+                transform: scale(1.2);
+            }
+            100% {
+                top: 0;
+                left: 0;
+                transform: scale(0.8);
+            }
+        }
+
         h1 {
             font-size: 3em;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.5em;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 20px auto;
-        }
-        audio {
-            display: none; /* Ocultamos el reproductor de audio */
-        }
-    </style>
-</head>
-<body>
+  
 
-    <h1>Mi amor, María</h1>
-    
-    <p>
-        Buenas noches, mucho gusto, eras una chica más<br>
-        Después de cinco minutos ya eras alguien especial<br>
-        Sin hablarme, sin tocarme, algo dentro se encendió<br>
-        En tus ojos se hacía tarde y me olvidaba del reloj<br><br>
-
-        Estos días a tu lado me enseñaron que en verdad<br>
-        No hay tiempo determinado para comenzar a amar<br>
-        Siento algo tan profundo que no tiene explicación<br>
-        No hay razón ni lógica en mi corazón<br><br>
-
-        Entra en mi vida, te abro la puerta<br>
-        Sé que en tus brazos ya no habrá noches desiertas<br>
-        Entra en mi vida, yo te lo ruego<br>
-        Te comencé por extrañar, pero empecé a necesitarte luego<br><br>
 
         Buenas noches, mucho gusto, ya no existe nadie más<br>
         Después de este tiempo juntos, no puedo volver atrás<br>
